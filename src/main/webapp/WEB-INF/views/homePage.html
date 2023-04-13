@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Custom StyleSheet -->
+    
+     <link href="./css/firstStyle.css" rel="stylesheet">
+    
+    <title>REAL ESTATE WEB SITE</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+          <a href="homePageController" class="logo" ><h1>WELCOME TO RS REAL ESTATE</h1></a>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="homePageController" class="nav-link">Home</a>
+              
+            </li>
+           <!--  <li class="nav-item">
+              <a href="PersonControllerView" class="nav-link">Person</a>
+            </li> -->
+            
+            <li class="nav-item">
+              <a href="PersonInfoController" class="nav-link">Person Details</a>
+            </li>
+
+            <li class="nav-item">
+            	<a href="AgentsInfoController" class="nav-link">Agents Details</a>
+            </li>
+            
+            <li class="nav-item">
+            
+            <label for="selectProperties"></label>
+				<select class="nav-link" id="selectProperties">
+                	<option selected disabled>Properties</option>
+      				<option value="option1"> Add Property</option>
+      				<option value="option2"> View Properties</option>
+      				<option value="option3"> Delete Property</option>
+      				<option value="option3"> Update Property</option>
+    			</select>
+            </li>
+            
+   
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="swiper-container heroslider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/pic1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/pic2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/pic5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/pic6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="bx bx-chevron-right swiper-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="bx bx-chevron-left swiper-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Find your dream home ....</h1>
+        <div class="search">
+          <input type="text" placeholder="Type Address, City, State" />
+          <a href="">Search</a>
+        </div>
+      </div>
+    </header>
+ 
+      <div class="containerforNewDiv">
+          <h2>How It Works</h2>
+          <div class="flex">
+              <div class ="containerinnerDiv">
+                  <span class="fas fa-home"></span>
+                  <h4>Find a Property.</h4>
+                 
+              </div>
+
+              <div class ="containerinnerDiv">
+                  <span class="fas fa-dollar-sign"></span>
+                  <h4>Buy a Property.</h4>
+                
+              </div>
+
+              <div class ="containerinnerDiv">
+                  <span class="fas fa-chart-line"></span>
+                  <h4>Investing.</h4>
+               
+              </div>
+          </div>
+      </div>
+
+  <!-- <section id="agents">
+    <div class="rent-center container">
+        <h2>Agents</h2>
+       
+
+        <div class="box">
+            <div class="card">
+                <img src="./images/agent-1.jpg" alt="Realtor 1" />
+                <h3>Kaiara Spencer</h3>
+                <p>Real Estate Agent</p>
+            </div>
+            
+
+            <div class="card">
+                <img src="./images/agent-2.jpg" alt="Realtor 1" />
+                <h3>Dave Simpson</h3>
+                <p>Real Estate Agent</p>
+            </div>
+
+            <div class="card">
+                <img src="./images/agent-4.jpg" alt="Realtor 1" />
+                <h3>Ben Thompson</h3>
+                <p>Real Estate Agent</p>
+            </div>
+
+            <div class="card">
+                <img src="./images/agent-5.jpg" alt="Realtor 1" />
+                <h3>Kyla Stewart</h3>
+                <p>Real Estate Agent</p>
+            </div>
+
+            <div class="card">
+                <img src="./images/agent-6.jpg" alt="Realtor 1" />
+                <h3>Rich Moffatt</h3>
+                <p>Real Estate Agent</p>
+            </div>
+
+            <div class="card">
+                <img src="./images/agent-7.jpg" alt="Realtor 1" />
+                <h3>Stuart Redman</h3>
+                <p>Real Estate Agent</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <section class="section rent">
+      <div class="title">
+        <h1>Properties For Rent</h1>
+        <p>
+          Search over 2000 properties to rent from the top agents in the country
+        </p>
+      </div>
+
+      <div class="rent-center container">
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="images/pic1.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in s</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic2.jpg" alt="down img check" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in s</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic3.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in s</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic4.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in s</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic5.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in s</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic6.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in Bloomfiled Hills</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic2.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in Birmingham</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic5.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in Rochester Hills</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="section grid-layout">
+      <div class="title">
+        <h1>Popular Properties</h1>
+      </div>
+
+      <div class="wrapper container">
+        <div class="box box1">
+          <img src="./images/pic4.jpg" alt="" />
+        </div>
+        <div class="box box2">
+          <img src="./images/vert3.jpg" alt="" />
+        </div>
+        <div class="box box3">
+          <img src="./images/pic1.jpg" alt="" />
+        </div>
+        <div class="box box4">
+          <img src="./images/pic3.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact">
+      <div class="row">
+        <div class="col">
+          <h2>EXCELLENT SUPPORT</h2>
+          <p>
+            We love our customers and they can reach us any time of day we will
+            be at your service 24/7
+          </p>
+          <a href="" class="btn btn-1">Contact</a>
+        </div>
+        <div class="col">
+          <form action="">
+            <div>
+              <input type="email" placeholder="Email Address" />
+              <a href="">Send</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rent">
+      <div class="title">
+        <h1>Discover Our Featured Listings</h1>
+        <p>
+          These featured listings contain exclusive real estate opportunities
+          within the city
+        </p>
+      </div>
+
+      <div class="rent-center container">
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic2.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in Novi</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic4.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in Farmington</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic5.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in Birmingham</p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/pic1.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span>FEATURED</span>
+              <span>BUY</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Luxury villa in Mackinac island </p>
+            <div>
+              <span>$700</span>
+              <span><i class="far fa-eye"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="">About us</a>
+          <a href="">Contact Us</a>
+          <a href="">Term & Conditions</a>
+          <a href="">Shipping Guide</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="">Customer Services</a>
+          <a href="">Promotion</a>
+          <a href="">Top Brands</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/index.js"></script>
+</html>
