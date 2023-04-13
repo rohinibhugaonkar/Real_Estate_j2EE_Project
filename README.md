@@ -40,4 +40,4 @@ Execution Steps:
 4. Create a database and run a script to create tables and insert data.
 5. Clean the entire project.
 6. Run the application on a server, home Page will open.
-http://localhost:8080/<yourProjectName>/homePageController
+http://localhost:8080/yourProjectName/homePageController
